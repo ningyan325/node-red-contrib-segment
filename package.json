@@ -19,5 +19,5 @@
     "url" : "https://github.com/ningyan325/node-red-contrib-segment.git"
   },
   "author": "Ning Yan (nyan325@gmail.com)",
-  "license": "ISC"
+  "license": "MIT"
 }
