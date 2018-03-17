@@ -1,0 +1,19 @@
+{
+  "name": "segment",
+  "version": "1.0.0",
+  "description": "segment event node connecting with segment.io ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "node-red" : {
+    "nodes": {
+      "segment": "segment.js"
+    }
+  },
+  "dependencies": {
+      "analytics-node": "3.2.0"
+  },
+  "author": "Ning Yan (nyan325@gmail.com)",
+  "license": "ISC"
+}

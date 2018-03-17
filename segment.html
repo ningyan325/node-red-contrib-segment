@@ -1,0 +1,57 @@
+<script type="text/javascript">
+    RED.nodes.registerType('segment',{
+        category: 'function',
+        color: '#a6bbcf', 
+        defaults: {
+            name: {value:""},
+            writekey: {value:"", required:true},
+            action: {value:"", required:true}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"segment";
+        },
+        oneditprepare: function() {
+             //$("#node-input-action").change(function() {
+                //var type = $("#node-input-action option:selected").val();
+                //more dynamic attributes here, then changes
+                //$("#node-input-action").change();
+            //}
+        },
+        oneditsave: function() {
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="segment">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label><br/>
+        <input type="text" id="node-input-name" placeholder="Segment Source Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-writekey"><i class="icon-tag"></i>Write-Key</label><br/>
+        <input type="text" id="node-input-writekey">
+    </div>
+    <div class="form-row">
+        <label for="node-input-action"><i class="fa fa-wrench"></i> Action</label>
+        <select id="node-input-action">
+          <option value="trackEvent">Track Event</option>
+          <option value="trackPage">Track Page</option>
+          <option value="identifyUser">Identify User</option>
+          <option value="groupUser">Group User</option>
+          <option value="aliasIdentities">Alias Identities</option>
+        </select>
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="segment">
+    <p>This node takes the specific message payloads of Segment and loads the data into Segment.io from the given operation selections</p>
+    <h3>The output</h3>
+         The response that from Segment after the operational action will diplay at Debuggin tab. 
+   <h3>Details</h3>
+   <p>More information about the node about inputs.</p>
+
+</script>
+
