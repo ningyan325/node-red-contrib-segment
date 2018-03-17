@@ -1,6 +1,6 @@
 {
-  "name": "segment",
-  "version": "1.0.0",
+  "name": "node-red-contrib-segment",
+  "version": "1.0.2",
   "description": "segment event node connecting with segment.io ",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,10 @@
   },
   "dependencies": {
       "analytics-node": "3.2.0"
+  },
+  "repository" :
+  { "type" : "git",
+    "url" : "https://github.com/ningyan325/node-red-contrib-segment.git"
   },
   "author": "Ning Yan (nyan325@gmail.com)",
   "license": "ISC"
